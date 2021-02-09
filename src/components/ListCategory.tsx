@@ -1,9 +1,17 @@
 import React from 'react';
+import {Badge} from 'react-bootstrap';
 
-const ListCategory = () => {
-    <div>
+const ListCategory = (props:any) => {
 
-    </div>
+
+    const item = props.categories.map((category: string, index: number) => {
+        return (
+          <li key={index}>
+            <Badge pill variant="light"> {category}</Badge>
+            console.log({index});
+          </li>);
+      });
+      return item
 }
 
 export default ListCategory;

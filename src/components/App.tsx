@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import '../stylesheets/App.scss';
 import getApiData from '../services/Api';
+import ListCategory from './ListCategory';
 
 
 const App = () => {
@@ -13,22 +14,17 @@ const App = () => {
     () => {
       getApiData().then(data => {
         setCategories(data);
+        console.log(data);
       });
     }, []);
 
 
-
-  const item = categories.map((category: string) => {
-    return (
-      <li >
-        {category}
-      </li>);
-  });
-
   return (
-    <div className="App">
-      <ul>
-        <li>{item}</li>
+    <div className="app">
+      <ul className="app__list">
+    <ListCategory
+    categories={categories}>
+    </ListCategory>
       </ul>
     </div>
   );
