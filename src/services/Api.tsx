@@ -1,5 +1,5 @@
 
-const getDataFromApi = () => {
+export const getDataFromApi = () => {
     return fetch(`https://api.chucknorris.io/jokes/categories`)
         .then(response => response.json())
         .then(data => {
@@ -7,4 +7,14 @@ const getDataFromApi = () => {
         });
 };
 
-export default getDataFromApi;
+
+
+
+ export const getJokeCategory = (category:string) => {
+    return fetch(`https://api.chucknorris.io/jokes/random?category=${category}`)
+        .then(response => response.json())
+        .then(data => {
+            return data;
+        });
+};
+
