@@ -6,7 +6,7 @@ const JokeDetail = (props:any) => {
   
     return (
         <Jumbotron>
-        <p>
+        <p className="textJoke">
          {props.joke}
         </p>
         <nav className="rtn"><Link to="/"><span>Volver</span> </Link ></nav>

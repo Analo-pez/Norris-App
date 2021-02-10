@@ -1,0 +1,29 @@
+.header {
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @media all and (min-width: 768px) {
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    &__img {
+        width: 100px;
+        border-radius: 25%;
+        @media all and (min-width: 768px) {
+            width: 150px;
+        }
+    }
+    &__title {
+        font-family: 'Stalinist One', 'Potta One', cursive;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        @media all and (min-width: 600px) {
+            font-size: 30px
+        }
+        @media all and (min-width: 768px) {
+            font-size: 35px
+        }
+    }
+}

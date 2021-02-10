@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheets/ListCategory.scss';
 import {Badge} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -16,16 +17,17 @@ const ListCategory = (props:any) => {
       }
 
         return (
-          <li 
+          <button
+          className="btn"
           key={index} 
           onClick={handleCategory} 
           id={category}
           >
             <Link to={`/joke`}>
-            <Badge pill variant="light"> {category}</Badge>
+            <Badge className="badge" pill variant="light"> {category}</Badge>
             </Link>
 
-          </li>);
+          </button>);
       });
       return item
 }

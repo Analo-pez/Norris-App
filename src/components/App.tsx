@@ -6,6 +6,7 @@ import ListCategory from './ListCategory';
 import { Route, Switch } from 'react-router-dom';
 import JokeDetail from './JokeDetail';
 import {getJokeCategory} from '../services/Api';
+import Header from './Header';
 
 
 const App = () => {
@@ -45,12 +46,15 @@ const App = () => {
     <div className="app">
         <Switch>
           <Route exact path="/">
-      <ul className="app__list">
+            <Header></Header>
+      <ul >
+        <li className="app__list">
           <ListCategory
           categories={categories}
           getJoke={getJoke}
           >
           </ListCategory>
+          </li>
       </ul>
           </Route>
           <Route path='/joke' render={paintJoke} >
