@@ -12,7 +12,7 @@ import Header from './Header';
 const App = () => {
 
   const [categories, setCategories] = useState([]);
-  const [jokes, setJokes] = useState([]);
+  const [jokes, setJokes] = useState('');
 
 
   useEffect(
@@ -23,9 +23,10 @@ const App = () => {
     }, []);
 
 
-    const getJoke = (props: any) => {
-        getJokeCategory(props.name).then(data => {
-            setJokes(data.value)
+    const getJoke = async(props: {name:string}) => {
+          setJokes('');
+          await  getJokeCategory(props.name).then( async data => {
+          setJokes(await data.value)
           });
         }
 

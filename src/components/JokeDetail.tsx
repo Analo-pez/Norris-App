@@ -2,7 +2,7 @@ import React from 'react';
 import {Jumbotron} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const JokeDetail = (props:any) => {
+const JokeDetail = (props:{children: never[]; joke:string}) => {
   
     return (
         <Jumbotron>
