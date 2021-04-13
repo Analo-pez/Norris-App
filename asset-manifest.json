@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Norris-app/static/css/main.73a8a1a4.chunk.css",
+    "main.js": "/Norris-app/static/js/main.28657ff9.chunk.js",
+    "main.js.map": "/Norris-app/static/js/main.28657ff9.chunk.js.map",
+    "runtime-main.js": "/Norris-app/static/js/runtime-main.cd9623ba.js",
+    "runtime-main.js.map": "/Norris-app/static/js/runtime-main.cd9623ba.js.map",
+    "static/js/2.bd7d7c8f.chunk.js": "/Norris-app/static/js/2.bd7d7c8f.chunk.js",
+    "static/js/2.bd7d7c8f.chunk.js.map": "/Norris-app/static/js/2.bd7d7c8f.chunk.js.map",
+    "index.html": "/Norris-app/index.html",
+    "static/css/main.73a8a1a4.chunk.css.map": "/Norris-app/static/css/main.73a8a1a4.chunk.css.map",
+    "static/js/2.bd7d7c8f.chunk.js.LICENSE.txt": "/Norris-app/static/js/2.bd7d7c8f.chunk.js.LICENSE.txt",
+    "static/media/norris.d23ec51a.png": "/Norris-app/static/media/norris.d23ec51a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd9623ba.js",
+    "static/js/2.bd7d7c8f.chunk.js",
+    "static/css/main.73a8a1a4.chunk.css",
+    "static/js/main.28657ff9.chunk.js"
+  ]
+}
